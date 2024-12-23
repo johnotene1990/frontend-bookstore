@@ -35,7 +35,7 @@ function Signup() {
       .then((result) => {
         const user = result.user;
         alert("User signed in with Google successfully");
-        window.location.href = "https://backend-bookstore-lbml.onrender.com/";
+        window.location.href = "/";
       })
       .catch((error) => {
         const errorMessage = error.message;
