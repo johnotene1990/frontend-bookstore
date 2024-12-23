@@ -2,9 +2,18 @@ import { Outlet } from 'react-router-dom'
 import Navbar from './component/navbar'
 import './App.css'
 import Myfooter from './component/footer'
+import React, { useEffect } from 'react';
 
 
 function App() {
+   useEffect(() => {
+     console.log('Backend API URL:', import.meta.env.VITE_API_URL);
+     // Example fetch request
+    fetch(`${import.meta.env.VITE_API_URL}/api/books`)
+       .then((response) => response.json())
+       .then((data) => console.log(data))
+     .catch((error) => console.error('Error fetching data:', error));
+   }, []);
  
 
   return (
