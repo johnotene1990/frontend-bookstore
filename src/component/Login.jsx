@@ -29,7 +29,7 @@ function Login() {
     signInWithGoogle()
       .then((result) => {
         alert("User signed in with Google successfully");
-        window.location.href = "/";
+        window.location.href = "https://backend-bookstore-lbml.onrender.com/";
       })
       .catch((error) => {
         alert(`Error: ${error.message}`);
