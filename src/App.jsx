@@ -7,9 +7,9 @@ import React, { useEffect } from 'react';
 
 function App() {
    useEffect(() => {
-     console.log('https://backend-bookstore-lbml.onrender.com/:', import.meta.env.VITE_API_URL);
+     console.log('Backend API URL:', import.meta.env.VITE_API_URL);
      // Example fetch request
-    fetch(`${import.meta.env.VITE_API_URL}/api/books`)
+    fetch(`${import.meta.env.VITE_API_URL}/https://backend-bookstore-lbml.onrender.com/all-books`)
        .then((response) => response.json())
        .then((data) => console.log(data))
      .catch((error) => console.error('Error fetching data:', error));
